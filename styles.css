@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #EBEBEB;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Altera para flex-start para alinhar ao topo */
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0; /* Remover margens para alinhar ao topo */
+    padding-top: 20px; /* Adicione um pequeno preenchimento se desejar */
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 40%; /* Ajuste a largura da linha aqui */
+    height: 2px; /* Altura da linha */
+    background-color: #E97911;
+    margin: 5px auto 20px; /* Centraliza a linha */
+}
+
+.card {
+    display: flex;
+    background-color: #FFF;
+    margin-bottom: 15px;
+    padding: 20px; /* Aumentado para melhorar o espaço interno */
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 700px; /* Ajuste a largura do card conforme necessário */
+    border-radius: 2%;
+}
+
+.decorative-line {
+    width: 10px;
+    background-color: #E97911;
+    position: absolute;
+    left: 0; /* A linha está colada na borda esquerda */
+    top: 0;
+    bottom: 0;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 10px; /* Espaço entre a linha decorativa e o conteúdo */
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between; /* Espaça os elementos para os lados */
+    width: 100%;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column; /* Organiza o botão e a data em coluna */
+    align-items: flex-end; /* Alinha à direita */
+}
+
+.card-content h2 {
+    font-size: 18px;
+    margin: 0; /* Remove margens para centralizar melhor */
+    text-align: left;
+}
+
+.expiry-text {
+    font-size: 14px;
+    color: #7d7d7d;
+    text-align: left;
+    margin: 0; /* Removida para que fique colado ao título */
+}
+
+.finalize-button {
+    background-color: #E97911;
+    color: #008000;
+    border: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 0; /* Removida para que fique colado à data */
+}
+
+.date {
+    font-size: 14px;
+    color: #7d7d7d;
+    margin: 0; /* Removida para que fique colado ao botão */
+}
